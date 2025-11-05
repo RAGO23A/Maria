@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tambónika Fest — Ritmos del Caribe. Espíritus de calle.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script>
+  // Espera a que el documento cargue
+  document.addEventListener("DOMContentLoaded", function() {
+    const navToggle = document.getElementById("nav-toggle");
+    const navLinks = document.querySelectorAll(".main-nav a");
+
+    // Cuando haces clic en cualquier enlace del menú, se cierra
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navToggle.checked = false;
+      });
+    });
+  });
+</script>
+<body>
+
+  <!-- ====== HEADER ======
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#inicio" class="brand" aria-label="Inicio">
+        <img src="imagenes/logo.png" alt="Tambónika" class="logo" />
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" />
+      <label for="nav-toggle" class="nav-burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#origen">Origen</a>
+        <a href="#ritmos">Servicios</a>
+        <a href="#expectativa">Expectativas</a>
+        <a href="#unete" class="btn-nav">Únete</a>
+      </nav>
+    </div>
+  </header> -->
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="#" class="logo">
+      <img src="imagenes/logo.png" alt="Logo" class="logo small">
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="main-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#origen">Origen</a>
+      <a href="#ritmos">Servicios</a>
+      <a href="#expectativas">Expectativas</a>
+      <a href="#unete" class="btn-nav">Únete</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <!-- ====== HERO ====== -->
+    <section id="inicio" class="hero-split">
+      <div class="hero-wrap">
+        <figure class="hero-media">
+          <img src="imagenes/dj-heroe.png" alt="DJ en cabina" />
+        </figure>
+
+        <div class="hero-copy container">
+          <h1 class="hero-title">
+            <span class="hero-white">Ritmos del</span>
+            <span class="word-caribe">Caribe</span>
+          </h1>
+          <h2 class="hero-sub">Espíritus de calle.</h2>
+          <p class="hero-lead">
+            El primer festival urbano de Colombia que vibra al ritmo de las
+            <b>músicas afrocaribeñas</b>, se vive en los barrios populares y fomenta el intercambio cultural.
+          </p>
+          <a href="#ritmos" class="btn hero-btn">Conoce nuestros ritmos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ORIGEN ====== -->
+    <section id="origen" class="section origen" aria-label="Origen">
+      <div class="origen-bg" style="--bg:url('imagenes/origen.jpg')"></div>
+
+      <figure class="origen-figure-right" aria-hidden="true">
+        <img src="imagenes/mujerfuego.png" alt="" />
+      </figure>
+
+      <div class="container narrow origen-copy">
+        <h2>En cada compás hay una historia</h2>
+
+        <div class="origen-text">
+          <p>
+            Nacido en el corazón del Caribe, <b>Tambónika Fest</b> celebra la mezcla entre las raíces afro y el poder transformador de la calle.
+          </p>
+          <p>
+            Es un <b>ecosistema cultural</b> donde fans, artistas y productores del Caribe y Colombia se encuentran para crear experiencias que laten al ritmo del <b>reggae, dancehall, champeta, hip hop, afrobeat y dembow</b>.
+          </p>
+          <p>
+            <b>Tambónika es más que una experiencia</b>: que une cultura, música y comunidad en un mismo ritmo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== ¿QUÉ ENCONTRARÁS? ====== -->
+    <section id="ritmos" class="section servicios" aria-label="Qué encontrarás">
+      <div class="container">
+        <h2>¿Qué encontrarás en Tambónika?</h2>
+
+        <div class="cards">
+          <!-- 1) Conciertos -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="imagenes/concierto.png" alt="Conciertos">
+            </div>
+            <h3>Conciertos</h3>
+            <p>
+              <b>Cartagena</b> es la sede del primer Tambónika Fest: donde el picó, alma sonora del Caribe, se roba el show y la ciudad vibra como epicentro urbano de Colombia.
+
+            </p>
+          </article>
+
+          <!-- 2) Arte a los barrios -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="imagenes/artealosbarrios.png" alt="Arte a los barrios">
+            </div>
+            <h3>Arte a los barrios</h3>
+            <p>
+              El festival sale de las playas y entra al corazón popular. Tambónika Fest recorre distintos barrios de la ciudad, llevando arte, ritmo y energía afrocaribeña a cada rincón.
+            </p>
+          </article>
+
+          <!-- 3) Mercado musical -->
+          <article class="card">
+            <div class="card-icon">
+              <img src="imagenes/mercadomusical.png" alt="Mercado musical">
+            </div>
+            <h3>Mercado musical</h3>
+            <p>
+              Más que un festival, Tambónika es un punto de encuentro para la escena urbana del Caribe. Cada edición une artistas, impulsa alianzas y da vida a nuevos proyectos musicales.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+<!-- ====== EXPECTATIVAS ====== -->
+<section id="expectativas" class="section expectativas" aria-label="Expectativas">
+
+  <!-- Imagen decorativa a la derecha -->
+  <figure class="expectativa-figure-right" aria-hidden="true">
+    <img src="imagenes/expectativa.png" alt="">
+  </figure>
+
+  <div class="testi-container">
+    <div class="testi-grid-2x2">
+
+      <!-- Testimonio 1 -->
+      <article class="testi-item">
+        <img src="imagenes/camila.jpg" alt="Camila" class="testi-avatar" />
+        <div class="testi-content">
+          <h3 class="testi-name">CAMILA SÁNCHEZ, 31</h3>
+          <p class="testi-text">
+            “Hacer negocios y formular proyectos es muy difícil para el sector urbano. Siempre nos cierran las puertas. Qué bueno que Tambónika haya pensado en nosotros, los productores, músicos y artistas de la escena urbana y afrocaribeña”.  
+          </p>
+        </div>
+      </article>
+
+      <!-- Testimonio 2 -->
+      <article class="testi-item">
+        <img src="imagenes/daniel.jpg" alt="Daniel" class="testi-avatar" />
+        <div class="testi-content">
+          <h3 class="testi-name">DANIEL RINCÓN, 26</h3>
+          <p class="testi-text">
+            “Soy artista emergente y me encanta la idea de que haya un festival que nos permita conectar con nuestro público. No somos nada sin el barrio”.  
+          </p>
+        </div>
+      </article>
+
+      <!-- Testimonio 3 -->
+      <article class="testi-item">
+        <img src="imagenes/sara.jpg" alt="Sara" class="testi-avatar" />
+        <div class="testi-content">
+          <h3 class="testi-name">SARA MÉNDEZ, 18</h3>
+          <p class="testi-text">
+            “En Colombia hay festivales para todos los gustos musicales. Sin embargo, ya hacía falta uno dedicado al dancehall, reggae y a los ritmos afrocaribeños”.  
+          </p>
+        </div>
+      </article>
+
+      <!-- Testimonio 4 -->
+      <article class="testi-item">
+        <img src="imagenes/ronal.jpg" alt="Ronal" class="testi-avatar" />
+        <div class="testi-content">
+          <h3 class="testi-name">RONAL SOLANO, 29</h3>
+          <p class="testi-text">
+            “Quiero ver artistas emergentes que no han tenido la oportunidad de ser vistos más allá de redes. ¿Vendrá pronto el cartel de invitados?”
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ====== CTA + FORM ====== -->
+<section id="unete" class="cta-form" aria-label="Únete">
+  <div class="cta-grid">
+
+    <!-- IZQUIERDA: FORMULARIO -->
+    <form class="form-flat" action="#" method="post" onsubmit="return false;">
+      <div class="field">
+        <label for="f_nombre">Nombre*</label>
+        <input id="f_nombre" type="text" placeholder="Tu nombre" required>
+      </div>
+
+      <div class="field">
+        <label for="f_email">Correo electrónico*</label>
+        <input id="f_email" type="email" placeholder="tucorreo@ejemplo.com" required>
+      </div>
+
+      <div class="field">
+        <label for="f_phone">Número de celular</label>
+        <input id="f_phone" type="tel" placeholder="+57 300 000 0000">
+      </div>
+
+      <div class="field">
+        <label for="f_city">Ciudad/País*</label>
+        <input id="f_city" type="text" placeholder="Ciudad, País" required>
+      </div>
+
+      <div class="field">
+        <label>¿Qué te gustaría hacer en Tambónika?*</label>
+        <div class="options">
+          <label class="option"><input type="radio" name="rol" required> Ser parte del equipo</label>
+          <label class="option"><input type="radio" name="rol"> Colaborar como artista o creador/a</label>
+          <label class="option"><input type="radio" name="rol"> Traer mi marca o hacer alianza</label>
+          <label class="option"><input type="radio" name="rol"> Tengo dudas o comentarios</label>
+          <label class="option"><input type="radio" name="rol"> Otro</label>
+        </div>
+      </div>
+
+      <label class="check-accept">
+        <input type="checkbox" required>
+        <span>Acepto la política de tratamiento de datos personales.</span>
+      </label>
+
+      <button class="btn-unete" type="submit">Enviar</button>
+    </form>
+
+    <!-- DERECHA: SOLO IMAGEN, SIN TEXTO -->
+    <aside class="cta-side">
+      <img src="imagenes/unete-persona.png" alt="Persona Tambónika" class="cta-person">
+    </aside>
+
+  </div>
+</section>
+
+
+<!-- ====== FOOTER ====== -->
+<footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- LOGO + TEXTO -->
+    <div class="footer-brand">
+      <img src="imagenes/logo.png" alt="Tambónika Fest" class="footer-logo">
+      <div class="footer-slogan">
+        <p>Ritmos del Caribe<br>Espíritus de calle.</p>
+      </div>
+    </div>
+
+    <!-- MENÚ -->
+    <nav class="footer-nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#origen">Origen</a>
+      <a href="#ritmos">Ritmos</a>
+      <a href="#expectativas">Expectativas</a>
+      <a href="#unete">Únete</a>
+    </nav>
+
+    <!-- REDES SOCIALES -->
+    <div class="footer-social">
+      <div class="social-icons">
+        <img src="imagenes/icon-facebook.png" alt="Facebook">
+        <img src="imagenes/icon-instagram.png" alt="Instagram">
+        <img src="imagenes/icon-tiktok.png" alt="TikTok">
+        <img src="imagenes/icon-youtube.png" alt="YouTube">
+      </div>
+      <p class="social-user">@Tambónikafest</p>
+    </div>
+
+  </div>
+</footer>
